@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:0d1117&height=200&section=header&text=Andi%20Galang&fontSize=80&fontColor=58a6ff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20Mobile%20Developer%20|%20AI%20Enthusiast&descSize=18&descAlignY=55&descAlign=50" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1b27,100:0d1117&height=200&section=header&text=Andi%20Arya%20Galang&fontSize=70&fontColor=58a6ff&animation=fadeIn&fontAlignY=35&desc=Full%20Stack%20Developer%20|%20Mobile%20Developer%20|%20AI%20Enthusiast&descSize=18&descAlignY=55&descAlign=50" width="100%"/>
 </div>
 
 <div align="center">
@@ -28,7 +28,7 @@
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px"> About Me
 
 ```typescript
-const andiGalang = {
+const andiAryaGalang = {
     pronouns: "He" | "Him",
     location: "Indonesia 🇮🇩",
     currentFocus: "Full Stack & Mobile Development",
@@ -92,7 +92,7 @@ const andiGalang = {
 ## 📊 GitHub Analytics
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Galang0304&show_icons=true&count_private=true&hide_border=true&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&bg_color=0d1117&ring_color=58a6ff" alt="Andi Galang github stats" /> 
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Galang0304&show_icons=true&count_private=true&hide_border=true&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&bg_color=0d1117&ring_color=58a6ff" alt="Andi Arya Galang github stats" /> 
   <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Galang0304&layout=compact&hide_border=true&title_color=58a6ff&text_color=c9d1d9&bg_color=0d1117&langs_count=8" />
 </div>
 
@@ -113,7 +113,7 @@ const andiGalang = {
 ## 📈 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Galang0304&custom_title=Andi%20Galang's%20Contribution%20Graph&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area_color=58a6ff&area=true&hide_border=true" width="100%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Galang0304&custom_title=Andi%20Arya%20Galang's%20Contribution%20Graph&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area_color=58a6ff&area=true&hide_border=true" width="100%"/>
 </div>
 
 ---
