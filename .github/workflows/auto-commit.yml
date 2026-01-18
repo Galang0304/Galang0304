@@ -1,0 +1,54 @@
+name: Auto Green Commit 🟩
+
+on:
+  schedule:
+    # Runs every day at random times (3 times a day)
+    - cron: '0 1 * * *'   # 08:00 WIB
+    - cron: '0 8 * * *'   # 15:00 WIB
+    - cron: '0 15 * * *'  # 22:00 WIB
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Git Config
+        run: |
+          git config user.name "Galang0304"
+          git config user.email "andiariegalang0@gmail.com"
+      
+      - name: Update Contribution File
+        run: |
+          # Create contribution log
+          mkdir -p logs
+          
+          # Generate random activity
+          ACTIVITIES=("☕ Coffee break coding" "🚀 Building something awesome" "💡 New idea implemented" "🔧 Bug fixes" "📚 Learning new tech" "🎯 Focused development" "✨ Feature update" "🔥 On fire today" "💪 Productive day" "🌟 Making progress")
+          RANDOM_ACTIVITY=${ACTIVITIES[$RANDOM % ${#ACTIVITIES[@]}]}
+          
+          # Update contribution file
+          echo "### 🟩 Auto Contribution Log" > logs/contribution.md
+          echo "" >> logs/contribution.md
+          echo "Last updated: $(TZ='Asia/Jakarta' date '+%Y-%m-%d %H:%M:%S WIB')" >> logs/contribution.md
+          echo "" >> logs/contribution.md
+          echo "Activity: $RANDOM_ACTIVITY" >> logs/contribution.md
+          echo "" >> logs/contribution.md
+          echo "---" >> logs/contribution.md
+          echo "🔄 This file is automatically updated to keep the contribution graph green!" >> logs/contribution.md
+          
+      - name: Commit and Push
+        run: |
+          git add -A
+          
+          # Random commit messages
+          MESSAGES=("🟩 Daily contribution" "✨ Keep the streak alive" "🔥 Another day, another commit" "💪 Consistency is key" "🚀 Progress update" "🌱 Growing every day" "⚡ Daily update" "🎯 On track")
+          RANDOM_MSG=${MESSAGES[$RANDOM % ${#MESSAGES[@]}]}
+          
+          git diff --staged --quiet || git commit -m "$RANDOM_MSG - $(date '+%Y-%m-%d')"
+          git push
