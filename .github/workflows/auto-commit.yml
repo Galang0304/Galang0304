@@ -7,26 +7,24 @@ on:
     - cron: '0 15 * * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   auto-commit:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: Create Commit
+      - name: Update File
         run: |
-          git config user.name "Galang0304"
-          git config user.email "andiariegalang0@gmail.com"
-          
           mkdir -p logs
-          echo "🟩 Last updated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > logs/contribution.md
-          echo "Activity: Daily contribution #$RANDOM" >> logs/contribution.md
-          
-          git add -A
-          git diff --staged --quiet || git commit -m "🟩 Auto commit - $(date -u '+%Y-%m-%d')"
-          git push
+          echo "🟩 Updated: $(date -u)" > logs/contribution.md
+      
+      - name: Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🟩 Auto commit - $(date -u '+%Y-%m-%d')"
+          commit_user_name: Galang0304
+          commit_user_email: andiariegalang0@gmail.com
