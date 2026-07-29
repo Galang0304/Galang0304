@@ -2,7 +2,7 @@
 
 # 👋 Hi, I'm Andi Arya Galang!
 
-### 💻 Full Stack Developer | 📱 Mobile Developer | 🤖 AI Enthusiast
+### 💻 Full Stack Developer | 📱 Mobile Developer | Sofware Engineer
 
 <br/>
 
